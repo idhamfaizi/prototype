@@ -1,0 +1,73 @@
+.column {
+    float: left;
+}
+
+.column.side.fungsi {
+    width: 50%;
+}
+
+
+.column.middle.fungsi {
+    width: 50%;
+}
+
+.column.isi {
+    width: 30%;
+    display: grid;
+    justify-content: center;
+}
+
+.column.isi i {
+    font-size: 5em;
+    color: #2B6EF0;
+}
+
+.column.text {
+    width: 70%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fungsi {
+    margin-top: 3em;
+}
+
+.quote {
+    margin-top: 3em;
+}
+
+.visi {
+    margin: 4em 0em;
+}
+
+.visi .column.side {
+    margin-top: 10em;
+    display: grid;
+    place-items: center;
+}
+
+.visi .isi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: .3s;
+    width: 318px;
+    height: 184px;
+}
+
+.card p {
+    padding: 0px 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

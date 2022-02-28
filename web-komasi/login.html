@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="theme-color" content="#2b6ef0">
+            <title>Masuk</title>
+        <link rel="icon" href="assets/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="style/login.css">
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="side coloumn">
+                <img src="assets/KOMASI.svg" alt="logo" width="195" height="30" style="float:left;">
+                <div class="login-box">
+                    <h1>Selamat Datang</h1>
+                    <form action="index.php" method="GET">
+                        <div class="user-box">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="&nbsp;Username" name="user" id="user">
+                        </div>
+                        <div class="user-box">
+                            <i class="fas fa-key"></i>
+                            <input type="password" placeholder="&nbsp;Password" name="pw" id="pw" maxlength="6">
+                        </div>
+                        <div class="btn">
+                            <button type="submit" onclick="return validasi()">Login</button>
+                            <button type="reset">Cancel</button>
+                        </div>
+                        <a href="#">Lupa password?</a><br>
+                        <p>Belum mempunyai akun?&nbsp;<a href="daftar.html">Daftar</a></p>
+                        <center><hr></center>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/komasiraharja/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-facebook-f" target="_blank"></i></a>
+                            <a href=""><i class="fab fa-twitter" target="_blank"></i></a>
+                        </div>
+                    </form>
+                    <span> 
+                        <i class="fas fa-chevron-circle-up"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="right coloumn">
+                <div class="container">
+                    <img src="assets/KOMASI.svg" alt="logo" width="195" height="30" style="float: right;">
+                    <div class="isi">
+                        <img id="logo" src="assets/logo2.png" alt="logo" width="230">
+                        <h1>universitas raharja</h1>
+                    </div>
+                    <i class="fas fa-chevron-circle-up"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

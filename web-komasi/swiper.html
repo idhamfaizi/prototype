@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        /* -webkit-background-size: cover;
+        background-size: cover; */
+        background-position: center;
+        background: rgba(0, 0, 0, .2); background-blend-mode: darken;  background-position: center; background-size: cover;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-slide {
+        width: 65%;
+      }
+
+      .swiper-slide:nth-child(2n) {
+        width: 60%;
+      }
+
+      .swiper-slide:nth-child(3n) {
+        width: 40%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+  <div id="section1" style="--swiper-navigation-color: #272727; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      <div class="parallax-bg" style="background-image: url('assets/bgAbout2.png');" data-swiper-parallax="-23%"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg-white-300 font-semibold text-center rounded-3xl shadow-2xl p-10 max-w-xs" style="backdrop-filter: blur(5px);">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer">
+            <h1 class="text-lg text-gray-700"> John Doe </h1>
+            <h3 class="text-sm text-gray-400 "> Creative Director </h3>
+            <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer">
+            <h1 class="text-lg text-gray-700"> John Doe </h1>
+            <h3 class="text-sm text-gray-400 "> Creative Director </h3>
+            <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer">
+            <h1 class="text-lg text-gray-700"> John Doe </h1>
+            <h3 class="text-sm text-gray-400 "> Creative Director </h3>
+            <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer">
+            <h1 class="text-lg text-gray-700"> John Doe </h1>
+            <h3 class="text-sm text-gray-400 "> Creative Director </h3>
+            <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer">
+            <h1 class="text-lg text-gray-700"> John Doe </h1>
+            <h3 class="text-sm text-gray-400 "> Creative Director </h3>
+            <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next px-10 hover:text-[#fff]"></div>
+      <div class="swiper-button-prev px-10 hover:text-[#fff]"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
