@@ -298,7 +298,7 @@
 </body>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        speed: 600,
+        speed: 1000,
         parallax: true,
         pagination: {
           el: ".swiper-pagination",
